@@ -24,6 +24,7 @@
 body{margin:0;background:#FFFFFF}
 :focus-visible{outline:3px solid #B8325A;outline-offset:3px}
 html{scroll-behavior:smooth}
+.diff-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px}@media(max-width:900px){.diff-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.diff-grid{grid-template-columns:1fr}}
 a{color:#1E2B4A}a:hover{color:#B8325A}
 </style>
 <div style="background: #FFFFFF; color: #2A2E37; font-family: 'Noto Sans TC', system-ui, sans-serif; font-size: 17px; line-height: 1.75">
@@ -108,7 +109,7 @@ a{color:#1E2B4A}a:hover{color:#B8325A}
           <img loading="lazy" src="images/alison-classroom.jpg" alt="Alison 在課堂上提問，學員舉手回應" style="width: 100%; height: 340px; object-fit: cover; border-radius: 16px; display: block">
         </div>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px">
+      <div class="diff-grid">
         <div style="border-top: 3px solid #1E2B4A; padding-top: 20px; display: flex; flex-direction: column; gap: 10px">
           <h3 style="margin: 0; font-size: 19px; color: #1E2B4A">在企業裡處理過真實的不安</h3>
           <p style="margin: 0; font-size: 16px; color: #3B404C">主導 2 次組織重整，透過 22 場員工說明會推動變革溝通，轉調率達 98%；導入職場導師制度，離職率下降 3.1%。</p>
@@ -133,14 +134,6 @@ a{color:#1E2B4A}a:hover{color:#B8325A}
           <h3 style="margin: 0; font-size: 19px; color: #1E2B4A">用數據看見人的問題</h3>
           <p style="margin: 0; font-size: 16px; color: #3B404C">主導 HRIS 數位化，年省近 7,000 小時工時；以 Power BI 分析離職動因，把「感覺」變成看得見、能追蹤的數字。</p>
         </div>
-      </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center">
-        <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">蓋洛普認證全球優勢教練</span>
-        <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">NVC 非暴力溝通管理師</span>
-        <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">SCPC 國際職涯策略規劃師</span>
-        <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">BSI ISO 45003 職場心理安全與高績效管理實務課程結業</span>
-        <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">AI 時代人力盤點專業認證</span>
-        <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">人才畫像測評顧問認證</span>
       </div>
     </div>
   </section>
@@ -341,6 +334,20 @@ a{color:#1E2B4A}a:hover{color:#B8325A}
             <p style="margin: 0; font-weight: 700"><a href="https://portaly.cc/happy152025" target="_blank" rel="noopener" style="color: #1E2B4A">《職場安全感研究所》</a></p>
           </div>
         </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 8px">
+          <p style="margin: 0; font-size: 14px; color: #5B6170">專業認證</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px">
+            <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">蓋洛普認證全球優勢教練</span>
+            <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">NVC 非暴力溝通管理師</span>
+            <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">SCPC 國際職涯策略規劃師</span>
+            <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">BSI ISO 45003 職場心理安全與高績效管理實務課程結業</span>
+            <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">AI 時代人力盤點專業認證</span>
+            <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">人才畫像測評顧問認證</span>
+            <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">夢想實踐卡高階帶領人認證</span>
+            <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">能力亮點卡進階帶領人認證</span>
+            <span style="border: 1px solid #D5D9E2; border-radius: 999px; padding: 8px 16px; font-size: 14px; color: #3B404C">自創思維積木帶領人認證</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -457,7 +464,7 @@ a{color:#1E2B4A}a:hover{color:#B8325A}
         <p style="margin: 0; color: #5B6170">請留下貴公司的需求，我們將於 2 個工作天內與您聯繫。</p>
         <p style="margin: 0; font-size: 15px; color: #5B6170">也歡迎來信：<a href="mailto:info@alisontalent.com">info@alisontalent.com</a></p>
       </div>
-      <form action="https://formsubmit.co/info@alisontalent.com" method="POST" style="background: #FFFFFF; border-radius: 16px; padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+      <form action="https://api.web3forms.com/submit" method="POST" style="background: #FFFFFF; border-radius: 16px; padding: 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
         <div style="display: flex; flex-direction: column; gap: 6px">
           <label for="f-company" style="font-size: 15px; font-weight: 500">公司名稱 *</label>
           <input id="f-company" name="公司名稱" type="text" required="" style="font: inherit; padding: 12px 14px; border: 1px solid #C9CED9; border-radius: 10px">
@@ -495,10 +502,11 @@ a{color:#1E2B4A}a:hover{color:#B8325A}
           <label for="f-need" style="font-size: 15px; font-weight: 500">需求簡述</label>
           <textarea id="f-need" name="需求簡述" rows="4" placeholder="例如：參與人數、預計時間、目前遇到的狀況…" style="font: inherit; padding: 12px 14px; border: 1px solid #C9CED9; border-radius: 10px; resize: vertical"></textarea>
         </div>
-        <input type="hidden" name="_subject" value="alisontalent.com 新的合作洽詢">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://alisontalent.com/thanks.html">
-        <input type="text" name="_honey" style="display: none" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="subject" value="alisontalent.com 新的合作洽詢">
+        <input type="hidden" name="from_name" value="alisontalent.com 官網">
+        <input type="hidden" name="access_key" value="4415f901-05d6-4dea-8411-a3fbd7407e17">
+        <input type="hidden" name="redirect" value="https://alisontalent.com/thanks.html">
+        <input type="checkbox" name="botcheck" style="display: none" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div style="grid-column: 1 / -1">
           <button type="submit" style="font: inherit; font-weight: 500; width: 100%; background: #B8325A; color: #FFFFFF; border: 0; padding: 15px 24px; border-radius: 999px; cursor: pointer">送出需求</button>
         </div>
